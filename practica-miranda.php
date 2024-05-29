@@ -16,12 +16,12 @@
 * @internal: El iva tiene que ser menor que 100
 */
 
-function calcularPrecioMasIVA($precio,$iva){
-$precioIva = ($precio*$iva/100);
+function calcularPrecioMasIVA($cantidad,$iva){
+$precioIva = ($cantidad*$iva/100);
 
     $impuesto = floatval(sprintf("%.2f",$precioIva));
 
-    return $precio+$impuesto;
+    return $cantidad+$impuesto;
 }
 
 
